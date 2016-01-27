@@ -1,0 +1,31 @@
+<ion-view view-title="Add Expense">
+  <ion-content  padding="true" class="has-header" scroll="false" overflow-scroll="false">
+    <div>
+      <br>
+      <form name="expensesForm" ng-submit="addExpense()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Category</span>
+          <select class="form-control focus" name="category" required ng-model="newExpense.category">
+              <option name="Food" id="Food">Food</option>
+              <option name="Travel" id="Travel">Travel</option>
+              <option name="Miscellaneous" id="Cosmetics">Miscellaneous</option>
+              <option name="Education" id="Education">Education</option>
+            </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Item</span>
+              <input type="text" class="form-control" name="item" placeholder="Expense Item Name" autocomplete="off" required ng-model="newExpense.item">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Price</span>
+              <input type="text" class="form-control" name="price" placeholder="Expense Price" autocomplete="off" required ng-model="newExpense.price">
+              <input type="hidden" class="form-control" name="date" placeholder="Date" autocomplete="off" required ng-model="newExpense.expensedate">
+        </label>
+      </div>
+    		<br>
+        <button class="btn btn-default" ng-disabled="expensesForm.$invalid">Add Expense</button>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

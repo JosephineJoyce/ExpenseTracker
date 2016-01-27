@@ -1,0 +1,29 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "cloudant": {
+    "host": "ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix.cloudant.com",
+    "port": 443,
+    "url": "https://ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix:b6a3f6b33dc86422212dfe8cbf23fcd6abc258f9ba9710f447495d6d880c7b07@ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix.cloudant.com",
+    "name": "cloudant",
+    "connector": "couch",
+    "db": "expense-tracker",
+    "protocol": "https",
+    "auth": {
+      "admin": {
+        "username": "ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix",
+        "password": "b6a3f6b33dc86422212dfe8cbf23fcd6abc258f9ba9710f447495d6d880c7b07"
+      },
+      "reader": {
+        "username": "ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix",
+        "password": "b6a3f6b33dc86422212dfe8cbf23fcd6abc258f9ba9710f447495d6d880c7b07"
+      },
+      "writer": {
+        "username": "ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix",
+        "password": "b6a3f6b33dc86422212dfe8cbf23fcd6abc258f9ba9710f447495d6d880c7b07"
+      }
+    }
+  }
+}
