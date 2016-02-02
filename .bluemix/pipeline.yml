@@ -1,0 +1,23 @@
+---
+stages:
+- name: MyStage
+  inputs:
+  - type: git
+    branch: master
+  jobs:
+  - name: Deploy
+    type: deployer
+    target:
+      region_id: ibm:yp:us-south
+      organization: jojustin@in.ibm.com
+      space: jejspace
+      application: ExpenseTracker
+    script: |+
+      #!/bin/bash
+      pwd
+      ls -la
+      cf create-service cloudantNoSQLDB Shared ExpenseDB
+      cf push "${CF_APP}" -m 256M
+      cf bind-service "${CF_APP}" ExpenseDB
+      cf restage "${CF_APP}"
+
