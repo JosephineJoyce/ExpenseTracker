@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "cloudant": {
-    "host": "ebabb81b-13a4-4be6-af47-1ef394bb1083-bluemix.cloudant.com",
+    "host": "51149d20-2621-4c5a-b39e-f45a40754e45-bluemix.cloudant.com",
     "port": 443,
     "url": "https://51149d20-2621-4c5a-b39e-f45a40754e45-bluemix:43ad756a4f1c2f6c71d86b80f68c5278e8e61605c13eebd001722c76239febe5@51149d20-2621-4c5a-b39e-f45a40754e45-bluemix.cloudant.com",
     "name": "cloudant",
