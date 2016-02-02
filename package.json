@@ -1,7 +1,7 @@
 {
-  "name": "ExpenseTracker",
+  "name": "JEJExpenseTracker",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "./server/server.js",
   "scripts": {
     "pretest": "jshint ."
   },
@@ -21,5 +21,5 @@
     "type": "",
     "url": ""
   },
-  "description": "ExpenseTracker"
+  "description": "JEJExpenseTracker"
 }
