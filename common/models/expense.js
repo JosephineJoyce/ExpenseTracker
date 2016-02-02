@@ -11,10 +11,12 @@ module.exports = function(Expense) {
 		function (err, instance)
 		{
 			var tempArr = [0, 0, 0, 0];
+			console.log("instance.length is "+instance.length);
 			for (var i=0;i<instance.length;i++)
 			{
 				if(instance[i].expensedate > lastDate)
 				{
+					console.log("in if");
 					if(instance[i].category == "Food")
 						tempArr[0] = tempArr[0] + instance[i].price;
 					else if (instance[i].category == "Travel")
