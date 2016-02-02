@@ -26,6 +26,7 @@ module.exports = function(Expense) {
 				}
 			}
 			for (var i = 0; i < tempArr.length; i++) {
+			console.log("temp arr is "+tempArr[i]);
 				var cat = "";
 				if(i == 0) cat = "Food";
 				if(i == 1) cat = "Travel";
